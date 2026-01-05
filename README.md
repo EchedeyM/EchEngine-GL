@@ -27,6 +27,7 @@ EchEngine is a minimal graphics engine built to learn modern rendering APIs and 
 
 ### Configure
 ```bash
+mkdir build
 cd build
 cmake .. -G "Visual Studio 17 2022"
 ```
