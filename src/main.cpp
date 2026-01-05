@@ -1,7 +1,8 @@
-#include <iostream>
+#include "Core/Application.h"
 
 int main()
 {
-    std::cout << "EchEngine starting up..." << std::endl;
+    Application app;
+    app.Run();
     return 0;
 }
