@@ -43,6 +43,8 @@ target_link_libraries(EchEngine PRIVATE
     glfw
     opengl32
     legacy_stdio_definitions
-    msvcrt
-    ucrt
 )
+
+if(MSVC)
+    set_target_properties(EchEngine PROPERTIES LINK_FLAGS "/NODEFAULTLIB:LIBCMT")
+endif()
